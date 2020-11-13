@@ -27,7 +27,7 @@ class ImageRecord {
     }
 }
 
-//MARK: Tark of different Operation
+//MARK: Track of different Operation
 class PendingOperation {
     var pendingDownloadOperation = [IndexPath: Operation]()
     let downloadQueue: OperationQueue = {

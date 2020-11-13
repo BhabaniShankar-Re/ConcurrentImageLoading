@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00821B88255DD6B5002D8D4A /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00821B87255DD6B5002D8D4A /* BasicTableViewCell.swift */; };
 		795313F424C1940300621629 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795313F324C1940300621629 /* AppDelegate.swift */; };
 		795313F624C1940300621629 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795313F524C1940300621629 /* SceneDelegate.swift */; };
 		795313F824C1940300621629 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795313F724C1940300621629 /* ListViewController.swift */; };
@@ -15,6 +16,12 @@
 		7953140024C1940500621629 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795313FE24C1940500621629 /* LaunchScreen.storyboard */; };
 		7953140B24C1940600621629 /* ConcurrentImageLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7953140A24C1940600621629 /* ConcurrentImageLoaderTests.swift */; };
 		7953141624C1949200621629 /* ImageModel+Functionlity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7953141524C1949200621629 /* ImageModel+Functionlity.swift */; };
+		7965E1B824F283C2006B0016 /* PixaImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965E1B724F283C2006B0016 /* PixaImageCell.swift */; };
+		7993C05824F06717003ADBFB /* PixaImageListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7993C05724F06717003ADBFB /* PixaImageListController.swift */; };
+		79D8C7BD24F1B17A0075C28E /* PixaImageNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D8C7BC24F1B17A0075C28E /* PixaImageNetworking.swift */; };
+		79D8C7C024F1B29F0075C28E /* PixaImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D8C7BF24F1B29F0075C28E /* PixaImageModel.swift */; };
+		79D8C7C224F1B7C10075C28E /* ImageResposeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D8C7C124F1B7C10075C28E /* ImageResposeModel.swift */; };
+		79D8C7C424F1DFF50075C28E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D8C7C324F1DFF50075C28E /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00821B87255DD6B5002D8D4A /* BasicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewCell.swift; sourceTree = "<group>"; };
 		795313F024C1940300621629 /* ConcurrentImageLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcurrentImageLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		795313F324C1940300621629 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		795313F524C1940300621629 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +48,12 @@
 		7953140A24C1940600621629 /* ConcurrentImageLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentImageLoaderTests.swift; sourceTree = "<group>"; };
 		7953140C24C1940600621629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7953141524C1949200621629 /* ImageModel+Functionlity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageModel+Functionlity.swift"; sourceTree = "<group>"; };
+		7965E1B724F283C2006B0016 /* PixaImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixaImageCell.swift; sourceTree = "<group>"; };
+		7993C05724F06717003ADBFB /* PixaImageListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixaImageListController.swift; sourceTree = "<group>"; };
+		79D8C7BC24F1B17A0075C28E /* PixaImageNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixaImageNetworking.swift; sourceTree = "<group>"; };
+		79D8C7BF24F1B29F0075C28E /* PixaImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixaImageModel.swift; sourceTree = "<group>"; };
+		79D8C7C124F1B7C10075C28E /* ImageResposeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResposeModel.swift; sourceTree = "<group>"; };
+		79D8C7C324F1DFF50075C28E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00FDB2AF255CEFB400C9D0F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7953141524C1949200621629 /* ImageModel+Functionlity.swift */,
+				79D8C7BF24F1B29F0075C28E /* PixaImageModel.swift */,
+				79D8C7C324F1DFF50075C28E /* ViewModel.swift */,
+				79D8C7C124F1B7C10075C28E /* ImageResposeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00FDB2B0255CEFCB00C9D0F1 /* Controlers */ = {
+			isa = PBXGroup;
+			children = (
+				795313F724C1940300621629 /* ListViewController.swift */,
+				7993C05724F06717003ADBFB /* PixaImageListController.swift */,
+			);
+			path = Controlers;
+			sourceTree = "<group>";
+		};
+		00FDB2B1255CEFDD00C9D0F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7965E1B724F283C2006B0016 /* PixaImageCell.swift */,
+				00821B87255DD6B5002D8D4A /* BasicTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00FDB2B2255CEFF500C9D0F1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				79D8C7BC24F1B17A0075C28E /* PixaImageNetworking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		795313E724C1940300621629 = {
 			isa = PBXGroup;
 			children = (
@@ -83,11 +134,13 @@
 			children = (
 				795313F324C1940300621629 /* AppDelegate.swift */,
 				795313F524C1940300621629 /* SceneDelegate.swift */,
-				795313F724C1940300621629 /* ListViewController.swift */,
-				7953141524C1949200621629 /* ImageModel+Functionlity.swift */,
-				795313F924C1940300621629 /* Main.storyboard */,
-				795313FC24C1940500621629 /* Assets.xcassets */,
+				00FDB2AF255CEFB400C9D0F1 /* Models */,
+				00FDB2B1255CEFDD00C9D0F1 /* Views */,
+				00FDB2B0255CEFCB00C9D0F1 /* Controlers */,
+				00FDB2B2255CEFF500C9D0F1 /* Networking */,
+				79D8C7BE24F1B18E0075C28E /* Resources */,
 				795313FE24C1940500621629 /* LaunchScreen.storyboard */,
+				795313F924C1940300621629 /* Main.storyboard */,
 				7953140124C1940500621629 /* Info.plist */,
 			);
 			path = ConcurrentImageLoader;
@@ -100,6 +153,14 @@
 				7953140C24C1940600621629 /* Info.plist */,
 			);
 			path = ConcurrentImageLoaderTests;
+			sourceTree = "<group>";
+		};
+		79D8C7BE24F1B18E0075C28E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				795313FC24C1940500621629 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +265,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				795313F824C1940300621629 /* ListViewController.swift in Sources */,
+				79D8C7C424F1DFF50075C28E /* ViewModel.swift in Sources */,
 				795313F424C1940300621629 /* AppDelegate.swift in Sources */,
 				795313F624C1940300621629 /* SceneDelegate.swift in Sources */,
+				79D8C7C024F1B29F0075C28E /* PixaImageModel.swift in Sources */,
+				7965E1B824F283C2006B0016 /* PixaImageCell.swift in Sources */,
+				79D8C7BD24F1B17A0075C28E /* PixaImageNetworking.swift in Sources */,
+				00821B88255DD6B5002D8D4A /* BasicTableViewCell.swift in Sources */,
+				7993C05824F06717003ADBFB /* PixaImageListController.swift in Sources */,
 				7953141624C1949200621629 /* ImageModel+Functionlity.swift in Sources */,
+				79D8C7C224F1B7C10075C28E /* ImageResposeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
