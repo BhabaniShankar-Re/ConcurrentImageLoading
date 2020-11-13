@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YwP-bz-1TO">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ImageRecCell" textLabel="Q55-i6-XkB" rowHeight="103" style="IBUITableViewCellStyleDefault" id="ij4-DQ-aFX">
@@ -58,9 +58,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Simple" image="photo" catalog="system" id="OOZ-ZD-a8z">
-                        <color key="badgeColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBarItem>
                     <navigationItem key="navigationItem" title="ImageRecordList" id="vVp-AL-HgD"/>
                     <connections>
                         <outlet property="activityIndicator" destination="qUN-Wo-yig" id="4xR-OB-aZs"/>
@@ -69,9 +66,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1822" y="-119"/>
+            <point key="canvasLocation" x="2731.8840579710145" y="-119.19642857142857"/>
         </scene>
-        <!--Pixabay-->
+        <!--Pixa Image List Controller-->
         <scene sceneID="H5J-hd-1bi">
             <objects>
                 <tableViewController id="Fro-fG-vA0" customClass="PixaImageListController" customModule="ConcurrentImageLoader" customModuleProvider="target" sceneMemberID="viewController">
@@ -171,23 +168,17 @@
                             <outlet property="delegate" destination="Fro-fG-vA0" id="0ox-Kk-ayc"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Pixabay" image="photo.on.rectangle" catalog="system" id="Yd3-Me-Zds">
-                        <color key="badgeColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBarItem>
-                    <navigationItem key="navigationItem" id="UsZ-xA-FLY">
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="refresh" id="pJv-aK-7O3">
-                                <connections>
-                                    <action selector="updatearow:" destination="Fro-fG-vA0" id="2R1-wF-NhB"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="add" id="IYH-rZ-RWD"/>
-                        </rightBarButtonItems>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="UsZ-xA-FLY">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="pJv-aK-7O3">
+                            <connections>
+                                <action selector="updatearow:" destination="Fro-fG-vA0" id="2R1-wF-NhB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2y-lX-MW5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1964" y="552"/>
+            <point key="canvasLocation" x="2873.913043478261" y="551.78571428571422"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9wY-Ip-G1L">
@@ -195,18 +186,61 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vy0-LQ-uCJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SSh-4s-MdS">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="sez-ZG-GYl"/>
-                        <segue destination="Fro-fG-vA0" kind="relationship" relationship="viewControllers" id="J9y-4V-VWU"/>
+                        <segue destination="zzA-Yw-Ejf" kind="relationship" relationship="viewControllers" id="sez-ZG-GYl"/>
+                        <segue destination="nIP-Wx-GwK" kind="relationship" relationship="viewControllers" id="J9y-4V-VWU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cbg-0M-thR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="93.75"/>
+        </scene>
+        <!--Simple-->
+        <scene sceneID="kfw-Pd-B5p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zzA-Yw-Ejf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Simple" image="photo" catalog="system" id="OOZ-ZD-a8z">
+                        <color key="badgeColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6jN-XV-Jyh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IWI-Pl-df3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hOG-3y-A52" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821.7391304347827" y="-119.19642857142857"/>
+        </scene>
+        <!--Pixabay-->
+        <scene sceneID="FtB-eI-Lx4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nIP-Wx-GwK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pixabay" image="photo.on.rectangle" catalog="system" id="Yd3-Me-Zds">
+                        <color key="badgeColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a81-6q-wP6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Fro-fG-vA0" kind="relationship" relationship="rootViewController" id="AEL-Gf-fFl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TsO-AW-TYN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1963.7681159420292" y="551.78571428571422"/>
         </scene>
     </scenes>
     <resources>

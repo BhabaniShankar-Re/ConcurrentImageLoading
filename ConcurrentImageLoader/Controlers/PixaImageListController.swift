@@ -35,6 +35,7 @@ class PixaImageListController: UITableViewController, UITableViewDataSourcePrefe
         self.view.addSubview(activityInicator)
         activityInicator.center = view.center
         activityInicator.startAnimating()
+        navigationItem.title = "PixaImage"
     }
     
     private func startDownloadOperation(for imagerecord: PixaImage, at indexPath: IndexPath) {
